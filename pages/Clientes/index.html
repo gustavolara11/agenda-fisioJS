@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Agenda - Clientes</title>
+    <link rel="stylesheet" href="../../styles.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="index.js"></script>
+    <div class="header-content">
+      <a href="../../index.html" class="home-button">Início</a>
+    </div>
+  </head>
+  <body>
+    <div id="modal-new-client" class="modal-new-client">
+      <div class="modal-add-client">
+        <h3 style="color: rgba(11, 109, 4, 0.7)">Novo Cliente</h3>
+        <form class="newClientForm">
+          <label for="client-name">Nome:</label>
+          <input id="client-name" class="client-name" type="text" />
+
+          <label for="clientBdate">Nascimento:</label>
+          <input id="clientBdate" class="clientBdate" type="date" />
+
+          <label for="client-cpf">CPF:</label>
+          <input id="client-cpf" class="client-cpf" type="number" />
+
+          <label for="client-adress">Endereço:</label>
+          <input id="client-adress" class="client-adress" type="text" />
+
+          <label for="client-city">Cidade:</label>
+          <input id="client-city" class="client-city" type="text" />
+
+          <label for="client-phone">Telefone:</label>
+          <input id="client-phone" class="client-phone" type="number" />
+        </form>
+        <div class="buttons">
+          <button
+            onclick="closeModal()"
+            id="saveNewClient"
+            class="saveNewClient"
+          >
+            Cadastrar
+          </button>
+          <button onclick="closeModal()" id="closeModal" class="closeModal">
+            Fechar
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="client-content">
+      <div class="search-client-content">
+        <form>
+          <label for="sclient-name">Nome:</label>
+          <input type="text" id="sclient-name" class="sclient-name" />
+          <label for="scpf-client">CPF:</label>
+          <input type="number" id="scpf-client" class="scpf-client" />
+        </form>
+        <button class="search-button" type="submit">Procurar</button>
+        <button onclick="openModal()" type="submit" class="btnew">
+          Novo Cliente
+        </button>
+      </div>
+
+      <div class="client-data"></div>
+    </div>
+  </body>
+</html>
