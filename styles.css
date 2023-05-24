@@ -1,5 +1,5 @@
-head {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+* {
+  caret-color: transparent;
 }
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -13,16 +13,20 @@ body {
   background-color: rgb(180, 255, 172, 0.5);
   box-shadow: 3px 3px 5px rgb(69, 68, 68, 0.5);
   margin: 0px;
+  padding: 0 24px;
 }
 .home-button {
   margin: 10px 0px;
   padding: 15px 24px;
   font-size: 22px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: rgb(11, 109, 4, 0.8);
+  color: rgba(11, 109, 4, 0.8);
+  text-decoration: none;
 }
 .home-button:hover {
-  font-weight: bold;
+  border-top: 5px solid rgba(11, 109, 4, 0.8);
+  padding: 10px 24px;
+  text-shadow: 1px 1px 3px rgba(11, 109, 4, 0.3);
 }
 .home-content {
   display: flex;

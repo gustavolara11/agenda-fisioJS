@@ -4,85 +4,47 @@
     <title>Agenda - Agenda</title>
     <link rel="stylesheet" href="../../styles.css" />
     <link rel="stylesheet" href="styles.css" />
-    <script src="index.js"></script>
+    <script src="index.js" defer></script>
+  </head>
+  <body>
     <div class="header-content">
       <a href="../../index.html" class="home-button">Início</a>
     </div>
-  </head>
-  <body>
     <div id="modal-content" class="modal-content">
       <div class="modal-add">
-        <h3 class="title-modal">Novo Agendamento</h1>
+        <h3 class="title-modal">Novo Agendamento</h3>
         <form>
-          <label for="hour-add">Data:</label>
-          <input
-            class="date-input"
-            id="hour-add"
-            type="datetime-local"
-          /><br />
+          <label for="date-add">Data:</label>
+          <input class="date-input" id="date-add" type="date" />
+          <label for="hour-add">Hora:</label>
+          <input class="date-input" id="hour-add" type="time" />
+          <br />
           <label for="name-add">Nome:</label>
           <input class="date-input" id="name-add" type="text" /> <br />
-          <button onclick="newAppoint()" class="button-2" type="submit">Agendar</button>
-          <button onclick="closeModal()" class="button-2" type="submit">Fechar</button>
+          <button onclick="newAppoint()" class="button-2" type="button">
+            Agendar
+          </button>
+          <button onclick="closeModal()" class="button-2" type="button">
+            Fechar
+          </button>
         </form>
       </div>
     </div>
     <div class="agenda-content">
-     
       <div><h1>Agenda</h1></div>
       <div><input class="date-input" type="date" /></div>
       <div class="add-button">
-        <button onclick="openModal()" class="button-2" type="submit">
+        <button onclick="openModal()" class="button-2" type="button">
           Novo agendamento
         </button>
       </div>
 
       <div class="table-content">
-        <table class="table1">
+        <table id="table1" class="table1">
           <tr>
             <th>Hora</th>
             <th>Nome</th>
             <th>Ação</th>
-          </tr>
-          <tr>
-            <td>8:00</td>
-            <td>Maria Anders</td>
-            <td>
-              <button class="button-2">Alterar</button
-              ><button class="button-2">Exluir</button>
-            </td>
-          </tr>
-          <tr>
-            <td>9:00</td>
-            <td>Maria Anders</td>
-            <td>
-              <button class="button-2">Alterar</button
-              ><button class="button-2">Exluir</button>
-            </td>
-          </tr>
-          <tr>
-            <td>10:00</td>
-            <td>Maria Anders</td>
-            <td>
-              <button class="button-2">Alterar</button
-              ><button class="button-2">Exluir</button>
-            </td>
-          </tr>
-          <tr>
-            <td>11:00</td>
-            <td>Maria Anders</td>
-            <td>
-              <button class="button-2">Alterar</button
-              ><button class="button-2">Exluir</button>
-            </td>
-          </tr>
-          <tr>
-            <td>12:00</td>
-            <td>Maria Anders</td>
-            <td>
-              <button class="button-2">Alterar</button
-              ><button class="button-2">Exluir</button>
-            </td>
           </tr>
         </table>
       </div>
